@@ -1,0 +1,7 @@
+#!/bin/bash
+yad --title "XeroLinux Shell Selection Tool" --form --columns=2 --width=480 --height=180 --text="Use this tool to configure your Shell. Recall this by typting <b>shell</b> in Terminal." --image=$HOME/xero.png \
+--field="<b>Switch to ZSH (OMZ+P10k)</b>":fbtn "konsole --noclose -e sh -c '/usr/local/bin/data/tozsh'" \
+--field="<b>Update ZSH Config</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/zshup'" \
+--field="<b>Revert Back Default Bash</b>":fbtn "konsole --noclose -e sh -c '/usr/local/bin/data/tobash'" \
+--field="<b>Update Bash Config</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/bashup'" \
+--button=Back:1
