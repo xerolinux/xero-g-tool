@@ -1,0 +1,13 @@
+#!/bin/bash
+#set -e
+echo "#################################"
+echo "        Disabliung Startup       "
+echo "#################################"
+sleep 1.5
+rm $HOME/.config/autostart/xero-tool.desktop
+sleep 1.5
+echo "#################################"
+echo "              Done!              "
+echo "#################################"
+sleep 2
+reboot

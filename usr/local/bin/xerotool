@@ -1,14 +1,14 @@
 #!/bin/bash
 [ -d /run/archiso/bootmnt/arch ] && exit
 yad --title "XeroLinux Configuration Tool" --form --columns=2 --width=540 --height=190 --text="Use this tool to configure your system. Now available in the AppMenu under <b>Utilities</b> or by typing <b>xerotool</b> in Terminal." --image=$HOME/xero.png  \
---field="<b>Update System Now</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/sysupd'" \
---field="<b>Install FOSS Drivers </b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/free'" \
---field="<b>Shell Configuration</b>":fbtn '/usr/local/bin/data/shell' \
---field="<b>Install/Enable Firewall</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/firewalled'" \
---field="<b>Enable Wayland Session</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/xway'" \
---field="<b>Get Faster Update Mirrors</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/ram'" \
---field="<b>Install Non-FOSS Drivers </b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/nvidia'" \
---field="<b>Fix Arch GnuPG Keys Issue</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/keyfix'" \
---field="<b>Install/Enable H-Block</b>":fbtn "konsole --noclose -e sh '/usr/local/bin/data/hblkaur'" \
---field="<b>Disable Autostart</b>":fbtn "konsole -e 'rm $HOME/.config/autostart/xero-tool.desktop'" \
+--field="<b>Update System Now</b>":fbtn "gnome-terminal -x '/usr/local/bin/data/sysupd'" \
+--field="<b>Install FOSS Drivers </b>":fbtn "gnome-terminal -x '/usr/local/bin/data/free'" \
+--field="<b>Switch to ZSH (OhMyZSH)</b>":fbtn "gnome-terminal -x '/usr/local/bin/data/tozsh'" \
+--field="<b>Install/Enable Firewall</b>":fbtn "gnome-terminal -x '/usr/local/bin/data/firewalled'" \
+--field="<b>Enable Wayland Session</b>":fbtn "gnome-terminal -x '/usr/local/bin/data/xway'" \
+--field="<b>Get Faster Update Mirrors</b>":fbtn "gnome-terminal -x '/usr/local/bin/ram'" \
+--field="<b>Install Non-FOSS Drivers </b>":fbtn "gnome-terminal -x '/usr/local/bin/data/nvidia'" \
+--field="<b>Fix Arch GnuPG Keys Issue</b>":fbtn "gnome-terminal -x '/usr/local/bin/keyfix'" \
+--field="<b>Install/Enable H-Block</b>":fbtn "gnome-terminal -x '/usr/local/bin/data/hblkaur'" \
+--field="<b>Disable Autostart</b>":fbtn "gnome-terminal -x '/usr/local/bin/data/xstartupx'" \
 --button=Exit:1

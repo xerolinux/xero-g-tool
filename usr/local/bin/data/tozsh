@@ -24,8 +24,6 @@ sleep 2
 echo "Step 4 - Setting Default Shell to ZSH"
 echo "#####################################"
 sudo chsh $USER -s /bin/zsh
-cd $HOME/.local/share/konsole/
-sed -i 's|/bin/bash|/bin/zsh|g' XeroLinux.profile
 sleep 2
 echo "Step 5 - Importing XeroLinux .zshrc"
 echo "#####################################"
