@@ -16,6 +16,7 @@ sudo chown root:sambashare /var/lib/samba/usershares
 sudo chmod 1770 /var/lib/samba/usershares
 sudo systemctl enable --now smb
 echo "#################################"
-echo "              Done!              "
+echo "Done, Rebooting Save Your Work ! "
 echo "#################################"
-sleep 2
+sleep 30
+reboot

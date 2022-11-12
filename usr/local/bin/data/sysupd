@@ -54,7 +54,7 @@ case $CHOICE in
       echo "#######################################"
       echo "                 Done !                "
       echo "#######################################"
-            clear && sh /usr/share/xerowelcome/scripts/update_system.sh
+            clear && sh /usr/local/bin/data/sysupd
       ;;
 
     2 )
@@ -68,7 +68,7 @@ case $CHOICE in
       echo "#######################################"
       echo "                 Done !                "
       echo "#######################################"
-            clear && sh /usr/share/xerowelcome/scripts/update_system.sh
+            clear && sh /usr/local/bin/data/sysupd
       ;;
 
 
