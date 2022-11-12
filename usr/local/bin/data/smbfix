@@ -12,10 +12,9 @@ sleep 1.5
 cd /etc/samba/ && sudo mv smb.conf smb.conf.orig
 cd /etc/samba/ && sudo wget https://raw.githubusercontent.com/xerolinux/xero-fixes/main/conf/smb.conf
 sudo mkdir -p /var/lib/samba/usershares
-sudo groupadd -r sambashare
 sudo chown root:sambashare /var/lib/samba/usershares
 sudo chmod 1770 /var/lib/samba/usershares
-sudo systemctl restart smb.service
+sudo systemctl enable --now smb
 echo "#################################"
 echo "              Done!              "
 echo "#################################"
