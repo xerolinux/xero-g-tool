@@ -3,9 +3,9 @@
 echo "#################################"
 echo "        Disabliung Startup       "
 echo "#################################"
-sleep 1.5
+sleep 1
 rm $HOME/.config/autostart/xero-g.desktop
-sleep 1.5
+sleep 1
 echo "#################################"
 echo "              Done!              "
 echo "#################################"
