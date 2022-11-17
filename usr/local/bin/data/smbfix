@@ -18,4 +18,4 @@ sudo systemctl enable --now smb
 echo "#################################"
 echo "   Done Please Reboot To Apply   "
 echo "#################################"
-sleep 3
+sleep 6
