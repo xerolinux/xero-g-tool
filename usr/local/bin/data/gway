@@ -1,0 +1,15 @@
+#!/bin/bash
+#set -e
+echo "#######################################"
+echo "   This Will Enable Wayland Session    "
+echo "#######################################"
+echo
+echo "    Enbeling GNOME Wayland Session    "
+echo "######################################"
+sleep 3
+sudo sed -i 's|false|true|g' /etc/gdm/custom.conf
+sleep 3
+echo
+echo "################################################"
+echo " Done! Please Reboot For Setting To Take Effect "
+echo "################################################"

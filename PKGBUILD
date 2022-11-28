@@ -2,7 +2,7 @@
 pkgname=xero-g-tool
 _destname1="/"
 pkgver=1.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Post-Install Tool for Xero-G"
 arch=('any')
 url="https://github.com/XeroLinux"
